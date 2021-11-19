@@ -1,5 +1,6 @@
 <template lang="pug">
-  div a
+  div
+    NuxtLink(to="/before/a") go to a
 </template>
 
 <script lang="ts">

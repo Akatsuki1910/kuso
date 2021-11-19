@@ -1,11 +1,10 @@
 <template lang="pug">
-  div
-    NuxtLink(to="/after/a") go to a
+  div Error
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
 
 @Component({})
-export default class After extends Vue {}
+export default class NotB extends Vue {}
 </script>
