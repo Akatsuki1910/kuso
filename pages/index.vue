@@ -1,5 +1,10 @@
 <template lang="pug">
-  div a
+  div
+    div
+      NuxtLink(to="/before") before
+    div
+      NuxtLink(to="/after") after
+    CheckList
 </template>
 
 <script lang="ts">
