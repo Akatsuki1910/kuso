@@ -61,11 +61,11 @@ export default {
   router: {
     extendRoutes(routes, resolve) {
       routes.push({
-        name: 'custom',
+        name: 'after404',
         path: '/after/*',
         component: resolve(__dirname, 'pages/404a.vue')
       }, {
-        name: 'custom',
+        name: 'before404',
         path: '/before/*',
         component: resolve(__dirname, 'pages/404b.vue')
       })
