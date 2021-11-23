@@ -9,8 +9,8 @@
         span(@click="stone1").button 石1
         span(@click="stone10").button 石10
     p
-      span(@click="gacha1").button ガチャ1
       span(@click="gacha10").button ガチャ10
+      span(@click="gacha1").button ガチャ1
       span(@click="reset").button リセット
     p
       div 結果
@@ -18,7 +18,7 @@
       div(v-for="(item,i) in Object.entries(data)" :key="i") {{item[0]}}:{{item[1]}}
     p
       div
-        NuxtLink(to="/before/a") go to a
+        NuxtLink(to="/before/a" target="_blank") go to a
       div
         NuxtLink(to="/") back
 </template>
