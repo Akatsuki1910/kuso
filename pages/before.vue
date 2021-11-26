@@ -88,16 +88,9 @@ export default class Before extends Vue {
 </script>
 
 <style lang="scss" scoped>
-body {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}
-
 .bg {
   background: crimson;
+  user-select: none;
 }
 
 .button {
