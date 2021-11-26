@@ -11,6 +11,7 @@
     p
       input(type="button" @click="gacha1" value="1回回す")
       input(type="button" @click="gacha10" value="10回回す")
+      span.hint(title="ガチャは1回につき石を5個消費します") ?
     p
       input(type="button" @click="reset" value=" リセット")
     p
@@ -91,3 +92,16 @@ export default class After extends Vue {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.hint {
+  margin: 8px;
+  display: inline-block;
+  font-size: 0.7rem;
+  text-align: center;
+  width: 1rem;
+  height: 1rem;
+  border: 1px black solid;
+  user-select: none;
+}
+</style>
